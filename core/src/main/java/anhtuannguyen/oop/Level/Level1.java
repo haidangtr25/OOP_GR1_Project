@@ -24,7 +24,7 @@ public class Level1 extends LevelBase {
     private static final int[][] map = {
         { 1, 1, 0, 2, 2, 0, 1, 1, 0, 3 },
         { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-        { 1, 0, 1, 1, 0, 2, 2, 0, 1, 1 },
+        { 1, 0, 1, 1asdasdasda, 0, 2, 2, 0, 1, 1 },
         { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
         { 1, 1, 0, 2, 2, 0, 1, 1, 0, 1 },
         { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -41,7 +41,7 @@ public class Level1 extends LevelBase {
         super(pause); // gọi constructor của LevelBase
     }
 
-    
+
 
 
     @Override
@@ -71,7 +71,7 @@ public class Level1 extends LevelBase {
         ball.add(b);
 
         int ROW = map.length;
-        int COL = map[0].length;    
+        int COL = map[0].length;
         // Khởi tạo khối
         block = new Block(0, 0, ball, ROW, COL, map, (int) WORLD_W/ROW, (int) WORLD_W/ROW * 64 / 100, blockTexture);
         ironblock = new Block(0, 0, ball, ROW, COL, map, (int) WORLD_W/ROW, (int) WORLD_W/ROW * 64 / 100, ironblockTexture);
